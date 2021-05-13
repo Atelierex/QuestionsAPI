@@ -1,0 +1,30 @@
+{
+  "name": "QuestionsAPI",
+  "version": "1.0.0",
+  "description": "Questions and Answers API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/May-Take-A-Second/QuestionsAPI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/May-Take-A-Second/QuestionsAPI/issues"
+  },
+  "homepage": "https://github.com/May-Take-A-Second/QuestionsAPI#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "k6": "*",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
