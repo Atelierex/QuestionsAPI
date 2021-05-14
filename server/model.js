@@ -2,7 +2,7 @@ const db = require('../db');
 
 const getQuestions = (questionDetails, callback) => {
   const q = `SELECT * FROM question
-             WHERE product_id LIKE '${questionDetails.product_id}' LIMIT ${questionDetails.count} `;
+             WHERE product_id = '${questionDetails.product_id}' LIMIT ${questionDetails.count} `;
 
   db.query(q, callback)
 
