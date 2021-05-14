@@ -8,7 +8,7 @@ const port = 3000
 app.use(express.json()) // for parsing application/json
 app.use(express.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
 
-
+app.use(express.static('public'))
 // app.get('/hello', ((req,res) => res.send('hello')))
 
 app.get('/qa/questions', controller.getQuestions);
