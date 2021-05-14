@@ -87,4 +87,10 @@ DELETE FROM photo WHERE url IS NULL;
  *  to create the database and the tables.*/
 /* select count(*) from answer for just the count
 -- select * from answer limit 10;
+
+-----------------------------------------------
+mysqldump -u root -p catwalk > catwalk.sql
+scp -i ~/Downloads/file.pem local_image_file user@ec2_elastic_ip:/home/user/images/
+mysql -u root -p catwalk < catwalk.sql
+mysql -u root -p questions < questions.sql to load the data when in file
 */
